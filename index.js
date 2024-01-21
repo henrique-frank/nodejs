@@ -2,6 +2,9 @@ const express = require('express');
 
 const server = express();
 
-server.get()
+// localhost:3000/curso
+server.get('/curso', (req, res) =>{
+    return res.json({curso: "Código da Aprovação!"})
+})
 
 server.listen(3000);
